@@ -57,7 +57,7 @@ public class Login extends AppCompatActivity {
                 }
                 progressBar.setVisibility(View.VISIBLE);
 
-                //register user
+                //login in existing user
                 uAuth.signInWithEmailAndPassword(email1,pwd).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
